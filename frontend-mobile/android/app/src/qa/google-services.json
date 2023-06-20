@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "204405594938",
+    "project_id": "acml-27263",
+    "storage_bucket": "acml-27263.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204405594938:android:4f7f85e12b6d5cf21c4e03",
+        "android_client_info": {
+          "package_name": "com.msf.acml.qa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204405594938-vbk2jus6ll57fdupq9gi63bvp2iags07.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUJ0R3T00RiHpBaVCXIJhOI3fAfjADHN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204405594938-vbk2jus6ll57fdupq9gi63bvp2iags07.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "204405594938-9m7sj8u956ubhhd67cl510i74m57gvlt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.msf.acml.qa"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

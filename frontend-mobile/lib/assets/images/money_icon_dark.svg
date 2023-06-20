@@ -1,0 +1,23 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_i_10700_47974)">
+<path d="M40 0H10C4.47715 0 0 4.47715 0 10V40C0 45.5228 4.47715 50 10 50H40C45.5228 50 50 45.5228 50 40V10C50 4.47715 45.5228 0 40 0Z" fill="#1D2124"/>
+</g>
+<path d="M37.1875 17.5H12.8125C12.2947 17.5 11.875 17.9197 11.875 18.4375V31.5625C11.875 32.0803 12.2947 32.5 12.8125 32.5H37.1875C37.7053 32.5 38.125 32.0803 38.125 31.5625V18.4375C38.125 17.9197 37.7053 17.5 37.1875 17.5Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25 28.75C27.0711 28.75 28.75 27.0711 28.75 25C28.75 22.9289 27.0711 21.25 25 21.25C22.9289 21.25 21.25 22.9289 21.25 25C21.25 27.0711 22.9289 28.75 25 28.75Z" fill="#00C802" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38.125 24.0625L30.625 17.5H38.125V24.0625Z" fill="#00C802" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38.125 25.9375L30.625 32.5H38.125V25.9375Z" fill="#00C802" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.875 24.0625L19.375 17.5H11.875V24.0625Z" fill="#00C802" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.875 25.9375L19.375 32.5H11.875V25.9375Z" fill="#00C802" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<filter id="filter0_i_10700_47974" x="0" y="0" width="50" height="55" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="5"/>
+<feGaussianBlur stdDeviation="7.5"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_10700_47974"/>
+</filter>
+</defs>
+</svg>

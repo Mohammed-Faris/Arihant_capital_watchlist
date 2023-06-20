@@ -1,0 +1,13 @@
+//
+//  CUG.xcconfig
+//  Runner
+//
+//  Created by Sahana Dhanraj on 31/05/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug-cug.xcconfig"
+#include "Generated.xcconfig"
+MARKETING_VERSION=37
+FLUTTER_TARGET=lib/main_cug.dart

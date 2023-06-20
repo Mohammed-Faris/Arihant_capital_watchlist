@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "72779715789",
+    "project_id": "acml-dev",
+    "storage_bucket": "acml-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72779715789:android:700f9a2de79d2ce0e00584",
+        "android_client_info": {
+          "package_name": "com.msf.acml.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72779715789-eur83e3afvvojqeki6ng8arn2mjq62u5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVDRLAOC9dQaHog7xK2U9ECSWwQGGROqE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72779715789-eur83e3afvvojqeki6ng8arn2mjq62u5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "72779715789-j9jvpeic4ctcpt0p9nn13av2lbn9u2cr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.msf.acml.dev"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

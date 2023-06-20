@@ -1,0 +1,150 @@
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterRoot = localProperties.getProperty('flutter.sdk')
+if (flutterRoot == null) {
+    throw GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+}
+task wrapper(type: Wrapper){
+    gradleVersion = '7.2'
+}
+tasks.register("prepareKotlinBuildScriptModel"){}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdkVersion 33
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    defaultConfig {
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId "com.msf.acml"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+     ndk {
+        abiFilters 'arm64-v8a', 'armeabi-v7a', 'x86_64'
+     }
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("MSFAndroidKey.jks")
+            storePassword "roadrunner"
+            keyAlias "marketsimplified"
+            keyPassword "roadrunner"
+            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            signingConfig signingConfigs.release
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+         
+            signingConfig signingConfigs.release    
+        }
+    }
+
+    flavorDimensions "default"
+
+    productFlavors {
+
+        dev {
+            applicationId 'com.msf.acml.dev'
+            versionCode 1
+            versionName '1.0.114'
+            resValue "string", "APP_NAME", "ACML DEV"
+        }
+        qa {
+            applicationId 'com.msf.acml.qa'
+            versionCode 3
+            versionName '1.0.197'
+            resValue "string", "APP_NAME", "ACML QA"
+        }
+        uat {
+            applicationId 'com.msf.acml.uat'
+            versionCode 1
+            versionName '1.0.114'
+            resValue "string", "APP_NAME", "ACML UAT"
+        }
+        cug {
+            applicationId 'com.msf.acml'
+            versionCode 22
+            versionName '1.0.7'
+            resValue "string", "APP_NAME", "Arihant Plus"
+        }
+        prod {
+            applicationId 'com.msf.acml'
+            versionCode 1
+            versionName '1.0.7'
+            resValue "string", "APP_NAME", "ACML"
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+configurations {
+    all*.exclude group: 'com.google.code.gson', module: 'gson'
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.google.firebase:firebase-analytics:21.2.1'
+    implementation 'com.google.firebase:firebase-crashlytics:18.3.6'
+    implementation fileTree(dir: "MSFNetwork-KT", include: ["*.aar"])
+
+    implementation 'com.android.installreferrer:installreferrer:2.2'
+
+    // MSF Network
+    implementation group: 'android', name: 'MSFNetwork-KT', version: '1.0.1', ext: 'aar'
+
+    // MSF Shield Push
+    implementation group: 'android', name: 'MSF-ShieldPush', version: '1.1.5', ext: 'aar'
+    implementation 'com.google.android.material:material:1.8.0'
+}

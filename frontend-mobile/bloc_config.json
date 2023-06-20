@@ -1,0 +1,39 @@
+{
+    "bloc": "rollOverak",
+    "states": [
+        {
+            "name": "loading",
+            "variables": []
+        },
+        {
+            "name": "done",
+            "variables": [
+                {
+                    "name": "rollOver",
+                    "type": "RollOverModel"
+                }
+            ]
+        },
+        {
+            "name": "error"
+        },
+        {
+            "name": "initial"
+        }
+    ],
+    "events": [
+        {
+            "name": "fetchRollover",
+            "variables": [
+                {
+                    "name": "type",
+                    "type": "String"
+                },
+                {
+                    "name": "sortBy",
+                    "type": "String"
+                }
+            ]
+        }
+    ]
+}

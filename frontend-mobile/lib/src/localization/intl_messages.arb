@@ -1,0 +1,8 @@
+{
+  "@@last_modified": "2021-10-26T11:37:29.556520",
+  "Are you sure want to exit from the app?": "Are you sure want to exit from the app?",
+  "@Are you sure want to exit from the app?": {
+    "type": "text",
+    "placeholders": {}
+  }
+}

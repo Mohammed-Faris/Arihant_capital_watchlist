@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "frontend-sdk-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "git@ssh.dev.azure.com:v3/MSF-Services/PushNotification-Shield/frontend-sdk-ios",
+      "state" : {
+        "revision" : "2b187c7f2151cc3459bde1014c1cc9f31cb28343",
+        "version" : "1.0.3"
+      }
+    }
+  ],
+  "version" : 2
+}

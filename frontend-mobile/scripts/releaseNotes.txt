@@ -1,0 +1,28 @@
+commaFmt Issue fixed
+
+External 2681,2676,2651,2577,2671,2699
+
+Auto Sms read Fixed
+Autorefresh of topgainers for every 30 seconds from 9 to 9.15 am if there is no data
+Alert Image replaced
+External 2626,2582,2625,2308,2513
+Span Api Integrated
+Alert success and failure page added 
+
+
+External 2254
+
+2582 - Given a Fix need to verify by QA in multiple device
+External 2595,2596,2557,2513,2584,2581,2557
+Fii Dii Data mismatch Fixed
+Line Chart Improvement
+1 D chart alone color based close and current ltp for other first and last point is checked
+
+Option Chain when switched expiry fastly sometime streaming failed - Fixed
+
+Quote analysis PIVOT POINTS and VolumeAnalysis FailedException Handled
+External 1980
+
+External 2557,2507,2506,2504,2468,2459,2456,2453,2450,2407,2406,2381
+
+
